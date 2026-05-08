@@ -75,27 +75,6 @@ function toggleFAQ(button) {
 }
 
 
-/*-----------------------Cart---------------------*/
-function addToCart(productObj) {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Now you access properties using the object name: productObj.name
-    const existingItem = cart.find(item => item.name === productObj.name);
-
-    if (existingItem) {
-        existingItem.quantity += 1;
-    } else {
-        cart.push({
-            name: productObj.name,
-            price: productObj.price,
-            image: productObj.image,
-            quantity: 1
-        });
-    }
-
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert(`${productObj.name} added!`);
-}
 
 //Search
 

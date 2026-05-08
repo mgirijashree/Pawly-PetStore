@@ -62,8 +62,8 @@
                             class="bi bi-cart3 text-xl"></i></a>
                     <button class="p-2 text-[#B7104D] hover:bg-[#F8AFC2] rounded-full transition"><i
                             class="bi bi-heart-fill text-xl"></i></button>
-                    <a href="signin.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
-                            class="bi bi-person text-xl"></i></a>
+                    <a href="account.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-person text-[#B7104D] underline-offset-4px decoration-[#B7104D] text-xl"></i></a>
 
 
                 </div>
@@ -72,7 +72,7 @@
                     <ul
                         class="flex flex-col mt-4 lg:flex-row lg:space-x-6 lg:mt-0 font-medium text-gray-800 pb-4 lg:pb-0">
                         <li><a href="index.html"
-                                class="block py-2 text-[#B7104D] underline-offset-4px decoration-[#B7104D] border-b-2 border-[#B7104D] lg:border-b-0">Home</a>
+                                class="block py-2  hover:text-[#B7104D] transition">Home</a>
                         </li>
                         <li><a href="dog.html" class="block py-2 hover:text-[#B7104D] transition">Dog</a></li>
                         <li><a href="cat.html" class="block py-2 hover:text-[#B7104D] transition">Cat</a></li>
@@ -90,9 +90,106 @@
 
 
 
+        <div class="flex max-w-[1440px] mx-auto min-h-screen">
 
+    <aside class="w-1/4 bg-[#FAF3ED] p-8 border-r border-gray-100">
+        <div class="mb-10">
+            <div class="w-16 h-16 rounded-2xl bg-[#28313D] flex items-center justify-center text-white text-3xl mb-4">
+                <i class="bi bi-person-badge"></i>
+            </div>
+            <h2 class="font-bold text-[#4E3E3E] text-xl">Welcome back!</h2>
+            <p class="text-sm text-[#8D8080]">Pet Parent Account</p>
+        </div>
 
+        <nav class="space-y-3">
+            <a href="#" class="flex items-center gap-3 bg-white shadow-sm text-[#D24B4B] px-4 py-3 rounded-2xl font-medium">
+                <i class="bi bi-person"></i>
+                Personal Info
+            </a>
+            <a href="#" class="flex items-center gap-3 text-[#5E4F4F] px-4 py-3 rounded-2xl hover:bg-white transition duration-300">
+                <i class="bi bi-heart-pulse"></i>
+                My Pets
+            </a>
+            <a href="#" class="flex items-center gap-3 text-[#5E4F4F] px-4 py-3 rounded-2xl hover:bg-white transition duration-300">
+                <i class="bi bi-bag"></i>
+                Orders History
+            </a>
+            <a href="#" class="flex items-center gap-3 text-[#5E4F4F] px-4 py-3 rounded-2xl hover:bg-white transition duration-300">
+                <i class="bi bi-gear"></i>
+                Settings
+            </a>
+        </nav>
+    </aside>
 
+    <main class="w-3/4 p-12 bg-[#FAF3ED]/30">
+        <div class="mb-10">
+            <h1 class="text-5xl font-extrabold text-[#5B4545] mb-3">
+                Account Settings
+            </h1>
+            <p class="text-[#9A8E8E]">
+                Manage your personal details and preferences.
+            </p>
+        </div>
+
+        <div class="relative bg-white rounded-[40px] p-10 shadow-sm overflow-hidden">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-[#D9F3EE] rounded-bl-[80px]"></div>
+
+            <div class="flex items-center gap-6 mb-10 relative z-10">
+                <div class="relative">
+                    <img src="https://i.pravatar.cc/150?img=32" class="w-24 h-24 rounded-[28px] object-cover" alt="profile">
+                    <div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-[#E54C59] border-2 border-white flex items-center justify-center text-white text-sm">
+                        <i class="bi bi-camera"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-[#4E3E3E] mb-1">Profile Photo</h2>
+                    <p class="text-[#9A8E8E] mb-4 text-sm">Recommended size: 400×400px. JPG or PNG.</p>
+                    <div class="flex items-center gap-5">
+                        <button class="bg-[#EEE5DE] px-6 py-2 rounded-full font-semibold text-[#4E3E3E] hover:bg-[#e5dbd2] transition">Change</button>
+                        <button class="text-[#D93636] font-semibold hover:underline">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <form id="accountForm">
+                <div class="grid grid-cols-2 gap-7 mb-7 relative z-10">
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest text-[#9C8E8E] mb-3 uppercase">Full Name</label>
+                        <input type="text" value="Elena Rodriguez" class="w-full bg-[#EFE7E0] rounded-2xl px-5 py-4 outline-none focus:ring-2 focus:ring-[#D84D57]/20">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest text-[#9C8E8E] mb-3 uppercase">Email Address</label>
+                        <input type="email" value="elena.r@example.com" class="w-full bg-[#EFE7E0] rounded-2xl px-5 py-4 outline-none focus:ring-2 focus:ring-[#D84D57]/20">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest text-[#9C8E8E] mb-3 uppercase">Phone Number</label>
+                        <input type="text" value="+1 (555) 123-4567" class="w-full bg-[#EFE7E0] rounded-2xl px-5 py-4 outline-none focus:ring-2 focus:ring-[#D84D57]/20">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest text-[#9C8E8E] mb-3 uppercase">Preferred Name</label>
+                        <input type="text" value="Elena" class="w-full bg-[#EFE7E0] rounded-2xl px-5 py-4 outline-none focus:ring-2 focus:ring-[#D84D57]/20">
+                    </div>
+                </div>
+
+                <div class="mb-12 relative z-10">
+                    <label class="block text-xs font-bold tracking-widest text-[#9C8E8E] mb-3 uppercase">Bio</label>
+                    <textarea class="w-full bg-[#EFE7E0] rounded-3xl px-5 py-5 outline-none h-32 resize-none focus:ring-2 focus:ring-[#D84D57]/20">Proud pet parent to Oliver the Golden Retriever and Luna the Siamese cat. Passionate about animal wellness and organic treats!</textarea>
+                </div>
+
+                <div class="flex items-center justify-between relative z-10">
+                    <div class="flex items-center gap-2 text-[#2AA193] text-sm">
+                        <i class="bi bi-shield-check"></i>
+                        <p>Your data is securely stored and never shared.</p>
+                    </div>
+                    <button type="submit" class="bg-gradient-to-r from-[#D84D57] to-[#FF6A63] text-white font-bold px-8 py-4 rounded-full shadow-lg flex items-center gap-3 hover:scale-105 transition-transform">
+                        Save Changes
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
 
 
 
