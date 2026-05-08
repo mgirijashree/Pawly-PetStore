@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ancestral Grain Blend",
+    "category": "ORGANIC",
+    "price": 45.00,
+    "desc": "Holistic nutrition for active breeds.",
+    "image": "./Assets/images/organic1.png"
+  },
+  {
+    "id": 2,
+    "name": "Tough-Tug Rope Pro",
+    "category": "NEW",
+    "price": 18.50,
+    "desc": "Indestructible fun for power chewers.",
+    "image": "./Assets/images/curated2.png"
+  },
+  {
+    "id": 3,
+    "name": "Vitality Drops 3-in-1",
+    "category": "WELLNESS",
+    "price": 29.99,
+    "desc": "Omega-3 & Joint support for seniors.",
+    "image": "./Assets/images/curated3.png"
+  }
+]

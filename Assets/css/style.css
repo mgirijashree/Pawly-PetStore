@@ -1,0 +1,37 @@
+.overall{
+    width:95%;
+    background-color: #f4eae3;
+    font-family: 'poppins';
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*--------------------Zoom effect--------------------- */
+
+@keyframes zoom {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  .animate-zoom {
+    animation: zoom 2s ease-in-out infinite;
+  }
+
+
+/*---------------------Marquee------------------------*/
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    50%{transform:translateX(75%);}
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+  }
+  /* Pause on hover */
+  .marquee-container:hover .animate-marquee {
+    animation-play-state: paused;
+  }

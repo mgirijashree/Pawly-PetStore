@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--  Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Animate Aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS Stylesheet-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Title-->
+    <title>Pawly</title>
+
+</head>
+
+<body>
+    <div class="overall ">
+
+        <!----------------------------NAv BAr---------------------------------->
+
+        <nav class="bg-[#FAF3ED]/80 w-full border-b sticky top-0 z-50 ">
+            <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between min-h-[80px]">
+
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="Assets/images/logo.png" alt="Pawly Logo" class="h-16">
+                </a>
+
+                <div class="flex items-center space-x-2 lg:order-2">
+                    <div class="hidden md:block w-48 lg:w-64 mx-4">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" placeholder="Find treats..."
+                                class="w-full pl-9 pr-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm focus:ring-2 focus:ring-[#B7104D]">
+                        </div>
+                    </div>
+
+                    <button data-collapse-toggle="mobile-menu" type="button"
+                        class="inline-flex items-center p-2 text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+
+                    <a href="cart.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-cart3 text-xl"></i></a>
+                    <button class="p-2 text-[#B7104D] hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-heart-fill text-xl"></i></button>
+                    <a href="signin.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-person text-xl"></i></a>
+
+
+                </div>
+
+                <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
+                    <ul
+                        class="flex flex-col mt-4 lg:flex-row lg:space-x-6 lg:mt-0 font-medium text-gray-800 pb-4 lg:pb-0">
+                        <li><a href="index.html" class="block py-2  hover:text-[#B7104D] transition ">Home</a>
+                        </li>
+                        <li><a href="dog.html"
+                                class="block py-2 text-[#B7104D] underline-offset-4px decoration-[#B7104D]">Dog</a></li>
+                        <li><a href="cat.html" class="block py-2 hover:text-[#B7104D] transition">Cat</a></li>
+                        <li><a href="smallpets.html" class="block py-2 hover:text-[#B7104D] transition">Small Pets</a>
+                        </li>
+                        <li><a href="breed.html" class="block py-2 hover:text-[#B7104D] transition">Shop by Breed</a>
+                        </li>
+                        <li><a href="vet.html" class="block py-2 hover:text-[#B7104D] transition">Consult Vet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--------------------Banner Section------------------>
+        <section class="px-6 py-12 w-full">
+            <div class="max-w-7xl mx-auto relative h-[350px] rounded-2xl overflow-hidden shadow-2xl group">
+                <img src="./Assets/images/food banner.png" alt="Golden Retriever"
+                    class="absolute inset-0 w-full h-full object-cover">
+
+                <div class="absolute inset-0 bg-black/30 bg-gradient-to-r from-black/60 to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-center px-12 md:px-20 text-white max-w-2xl">
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Fuel their Play.
+                    </h2>
+                    <p class="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
+                        Nutritional tailored for every tailwag. Explore our premium selection of science - backed
+                        formulas.
+                    </p>
+                    <div>
+                        <a href="breed.html"
+                            class="animate-zoom inline-block bg-[#E55F5F] text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-[#d44d4d] transition-all">
+                            Shop bestsellers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!----------------Filter Section--------------->
+
+
+
+
+        <section class="max-w-7xl mx-auto py-16 px-6 flex flex-col md:flex-row gap-12">
+
+            <aside class="w-full md:w-1/4 space-y-10">
+                <div>
+    <h3 class="text-xl font-bold uppercase mb-4">Life Stage</h3>
+    <div id="lifeFilters" class="space-y-3"> 
+        <label class="flex items-center gap-3 cursor-pointer">
+            <input type="checkbox" value="Puppy" class="filter-check w-5 h-5 accent-[#B13636]">
+            <span class="text-gray-700">Puppy</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+            <input type="checkbox" value="Adult" class="filter-check w-5 h-5 accent-[#B13636]">
+            <span class="text-gray-700">Adult</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+            <input type="checkbox" value="Senior" class="filter-check w-5 h-5 accent-[#B13636]">
+            <span class="text-gray-700">Senior</span>
+        </label>
+    </div>
+</div>
+
+
+<div>
+    <h3 class="text-xl font-bold mb-4 uppercase">Food Type</h3>
+    <div id="typeFilters" class="flex flex-col gap-4"> 
+        <label class="flex items-start gap-3 cursor-pointer group">
+            <input type="checkbox" value="Wet Food" class="filter-check w-5 h-5 accent-[#B13636] mt-1">
+            <span class="text-gray-700 font-medium">Wet Food</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer group">
+            <input type="checkbox" value="Dry Food" class="filter-check w-5 h-5 accent-[#B13636] mt-1">
+            <span class="text-gray-700 font-medium">Dry Food</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer group">
+            <input type="checkbox" value="Raw Diet" class="filter-check w-5 h-5 accent-[#B13636] mt-1">
+            <span class="text-gray-700 font-medium">Raw Diet</span>
+        </label>
+    </div>
+</div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Price Range</h3>
+                    <input type="range" class="w-full accent-[#B13636]" min="0" max="500">
+                    <div class="flex justify-between text-sm font-bold mt-2">
+                        <span>$0</span>
+                        <span>$500+</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!---------------------------Product Lsit---------------->
+            <main class="flex-1">
+
+
+                <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+    <h2 class="text-gray-700 text-lg">
+        Showing <span id="itemCount" class="text-[#B13636] font-bold">0</span> premium products
+    </h2>
+    <div class="relative w-full md:w-96 mb-8">
+    <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+        <i class="bi bi-search"></i>
+    </span>
+    <input 
+        type="text" 
+        id="productSearch" 
+        placeholder="Search for kibble, treats, or toys..." 
+        class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-full focus:ring-2 focus:ring-[#B7104D] outline-none transition-all"
+    >
+</div>
+    <div class="flex items-center gap-2">
+        <span class="text-sm font-medium">SORT BY:</span>
+        <select id="sortSelect" class="border rounded-full px-4 py-2">
+            <option value="relevance">Relevance</option>
+            <option value="low">Low to High</option>
+            <option value="high">High to Low</option>
+        </select>
+    </div>
+</div>
+                <div class="max-w-7xl mx-auto p-6 bg-[#F9F5F1] font-sans">
+                    
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6" id="productGrid">
+
+
+
+
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Adult"
+                            data-type="Dry Food" data-price="64.99">
+                            <img src="./Assets/images/food1.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Royal Canin Golden Retriever Adult</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star text-gray-300"></i>
+                                <span class="ml-2 text-gray-600">(428)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$64.99</span>
+                                <button onclick="addToCart('Royal Canin Adult', 64.99, './Assets/images/food1.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Adult"
+                            data-type="Wet Food" data-price="58.50">
+                            <img src="./Assets/images/food2.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Purina Pro Plan High Protein Puppy</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star text-gray-300"></i>
+                                <span class="ml-2 text-gray-600">(152)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$58.50</span>
+                                <button onclick="addToCart('Purina Pro Plan Adult', 58.50, './Assets/images/food2.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Puppy"
+                            data-type="Raw Diet" data-price="72.00">
+                            <img src="./Assets/images/food7.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Blue Buffalo Wilderness Grain-Free</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star text-gray-300"></i>
+                                <i class="bi bi-star  text-gray-300"></i>
+                                <span class="ml-2 text-gray-600">(829)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$72.00</span>
+                                <button onclick="addToCart('Blue Buffalo Puppy', 72.00, './Assets/images/food7.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Puppy"
+                            data-type="Raw Diet" data-price="49.99">
+                            <img src="./Assets/images/food3.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Hill's Science Diet Sensitive Stomach</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ml-2 text-gray-600">(315)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$49.99</span>
+                                <button onclick="addToCart('Hills Science Puppy', 49.99, './Assets/images/food3.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Senior"
+                            data-type="Dry Food" data-price="68.99">
+                            <img src="./Assets/images/food5.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Wellness Core Grsin-free Originsl</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ml-2 text-gray-600">(672)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$68.99</span>
+                                <button onclick="addToCart('Wellness Core Senior', 68.99, './Assets/images/food5.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Senior"
+                            data-type="Wet Food" data-price="28.45">
+                            <img src="./Assets/images/food6.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Freshpet Vital Grain-free Beef Roll</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ml-2 text-gray-600">(210)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$28.45</span>
+                                <button onclick="addToCart('Freshpet Senior', 28.45, './Assets/images/food6.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Adult"
+                            data-type="Raw Diet" data-price="82.99">
+                            <img src="./Assets/images/food7.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">Acana Singles Limited Ingredient Beef</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ml-2 text-gray-600">(104)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$82.99</span>
+                                <button onclick="addToCart('Acana Beef Adult', 82.99, './Assets/images/food7.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product-card bg-white p-6 rounded-2xl relative shadow-sm" data-life="Adult"
+                            data-type="Raw Diet" data-price="74.99">
+                            <img src="./Assets/images/food8.png" class="w-full h-48 object-contain mb-4">
+                            <h4 class="font-bold text-lg leading-tight">The Honest Kitchen Dehydrated Chicken</h4>
+                            <div class="flex items-center gap-1 text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ml-2 text-gray-600">(1240)</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <span class="text-2xl font-bold text-[#B13636]">$74.99</span>
+                                <button onclick="addToCart('Honest Kitchen Adult', 74.99, './Assets/images/food8.png')"
+                                    class="w-12 h-12 bg-[#0D6B61] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="bi bi-basket-fill"></i>
+                                </button>
+                            </div>
+
+
+
+                        </div>
+
+                            <div id="noResults" class="hidden text-center py-20 w-full">
+                                <h3 class="text-2xl font-bold text-gray-400">No Results Found</h3>
+                                <p class="text-gray-500">Try unchecking some filters!</p>
+                            </div>
+                    </div>
+
+                </div>
+            </main>
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------------------Footer------------------------------->
+
+        <footer class="bg-[#FAF3ED] w-full pt-4 pb-2 text-gray-700 rounded-t-3xl mt-16 border-t border-gray-200/30">
+
+            <div class="max-w-7xl mx-auto px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+
+                    <!-- Column 1 -->
+                    <div>
+
+                        <a href="index.html" class="inline-block mb-6">
+                            <h2 class="font-extrabold text-[#B7104D] text-4xl tracking-tight">Pawly</h2>
+                        </a>
+
+                        <p class="text-lg leading-relaxed text-gray-500 mb-2 max-w-xs">
+                            Curating the world's finest supplies for your non-human family
+                            members. We believe in quality, longevity, and extra belly rubs.
+                        </p>
+
+                        <img src="./Assets/images/footer images.png" alt="Happy Pets" class="h-12 object-contain">
+
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="lg:pl-10">
+
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Pet Care </h4>
+
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li>Puppy Care</li>
+                            <li>Senior Wellness</li>
+                            <li>Adopt Don't Shop</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="lg:pl-6">
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Sustainability</h4>
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li> Eco Packaging </li>
+                            <li>Ethical Sourcing </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div>
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm"> Newsletter</h4>
+
+                        <p class="text-lg text-gray-600 mb-2"> Great treats and tips in your inbox </p>
+
+                        <form class="flex gap-1">
+                            <input type="email" placeholder="Enter e-mail address..." required
+                                class="flex-1 px-1 py-4 border border-gray-300 rounded-2xl text-base focus:outline-none focus:border-[#B7104D] bg-white min-w-0">
+
+                            <button type="submit"
+                                class="bg-[#B7104D] text-white w-10 rounded-xl flex items-center justify-center hover:opacity-90 transition">
+
+                                <i class="bi bi-arrow-right text-2xl"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="mt-2 pb-4 border-t border-gray-200/50 text-center">
+
+                    <p class="text-sm text-gray-400">
+                        &copy; 2026 Pawly Sanctuary. Made with love and treats.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <script src="./Assets/js/food.js"></script>
+        <!--Flowbite-->
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+        <!--Animate aos-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

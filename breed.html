@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--  Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Animate Aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS Stylesheet-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!--Title-->
+    <title>Pawly</title>
+
+</head>
+
+<body>
+    <div class="overall ">
+
+        <!----------------------------NAv BAr---------------------------------->
+
+        <nav class="bg-[#FAF3ED]/80 w-full border-b sticky top-0 z-50 ">
+            <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between min-h-[80px]">
+
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="Assets/images/logo.png" alt="Pawly Logo" class="h-16">
+                </a>
+
+                <div class="flex items-center space-x-2 lg:order-2">
+                    <div class="hidden md:block w-48 lg:w-64 mx-4">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" placeholder="Search..."
+                                class="w-full pl-9 pr-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm focus:ring-2 focus:ring-[#B7104D]">
+                        </div>
+                    </div>
+
+                    <button data-collapse-toggle="mobile-menu" type="button"
+                        class="inline-flex items-center p-2 text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+
+                    <a href="cart.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-cart3 text-xl"></i></a>
+                    <button class="p-2 text-[#B7104D] hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-heart-fill text-xl"></i></button>
+                    <a href="signin.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-person text-xl"></i></a>
+
+
+                </div>
+
+                <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
+                    <ul
+                        class="flex flex-col mt-4 lg:flex-row lg:space-x-6 lg:mt-0 font-medium text-gray-800 pb-4 lg:pb-0">
+                        <li><a href="index.html"
+                                class="block py-2 hover:text-[#B7104D] transition ">Home</a>
+                        </li>
+                        <li><a href="dog.html" class="block py-2 hover:text-[#B7104D] transition">Dog</a></li>
+                        <li><a href="cat.html" class="block py-2 hover:text-[#B7104D] transition">Cat</a></li>
+                        <li><a href="smallpets.html" class="block py-2 hover:text-[#B7104D] transition">Small Pets</a>
+                        </li>
+                        <li><a href="breed.html" class="block py-2 text-[#B7104D] underline-offset-4px decoration-[#B7104D] ">Shop by Breed</a>
+                        </li>
+                        <li><a href="vet.html" class="block py-2 hover:text-[#B7104D] transition">Consult Vet</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+
+
+
+
+<!--------------------Banner Section------------------>
+<section class="py-20 w-full bg-[#FAF3ED] text-center px-6">
+    <div class="max-w-4xl mx-auto">
+        
+        <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+            Curated for your 
+            <span class="text-[#B7104D] underline decoration-[#B7104D] decoration-4 underline-offset-[12px]">
+                unique
+            </span> 
+            companion.
+        </h2>
+
+        <p class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+            Every breed has a story, a personality, and specific needs. Select your pet type to explore tailored essentials.
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            
+            <a href="dog.html" class="flex items-center gap-6 bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group min-w-[320px]">
+                <div class="bg-[#FDE2E2] w-20 h-20 rounded-full flex items-center justify-center transition-transform group-hover:rotate-12">
+                    <img src="./Assets/images/green paw.png">
+                </div>
+                <div class="text-left">
+                    <h4 class="text-2xl font-bold text-gray-900">Shop for Dogs</h4>
+                    <p class="text-gray-500 font-medium">32+ Breeds curated</p>
+                </div>
+            </a>
+
+            <a href="breed.html" class="flex items-center gap-6 bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group min-w-[320px]">
+                <div class="bg-[#79FFE1]/30 w-20 h-20 rounded-full flex items-center justify-center transition-transform group-hover:-rotate-12">
+                   <img src="./Assets/images/red paw.png">
+                </div>
+                <div class="text-left">
+                    <h4 class="text-2xl font-bold text-gray-900">Shop for Cats</h4>
+                    <p class="text-gray-500 font-medium">18+ Breeds curated</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+ <!----------------------------Footer------------------------------->
+
+        <footer class="bg-[#FAF3ED] w-full pt-4 pb-2 text-gray-700 rounded-t-3xl mt-16 border-t border-gray-200/30">
+
+            <div class="max-w-7xl mx-auto px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+
+                    <!-- Column 1 -->
+                    <div>
+
+                        <a href="index.html" class="inline-block mb-6">
+                            <h2 class="font-extrabold text-[#B7104D] text-4xl tracking-tight">Pawly</h2>
+                        </a>
+
+                        <p class="text-lg leading-relaxed text-gray-500 mb-2 max-w-xs">
+                            Curating the world's finest supplies for your non-human family
+                            members. We believe in quality, longevity, and extra belly rubs.
+                        </p>
+
+                        <img src="./Assets/images/footer images.png" alt="Happy Pets" class="h-12 object-contain">
+
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="lg:pl-10">
+
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Pet Care </h4>
+
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li>Puppy Care</li>
+                            <li>Senior Wellness</li>
+                            <li>Adopt Don't Shop</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="lg:pl-6">
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Sustainability</h4>
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li> Eco Packaging </li>
+                            <li>Ethical Sourcing </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div>
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm"> Newsletter</h4>
+
+                        <p class="text-lg text-gray-600 mb-2"> Great treats and tips in your inbox </p>
+
+                        <form class="flex gap-1">
+                            <input type="email" placeholder="Enter e-mail address..." required
+                                class="flex-1 px-1 py-4 border border-gray-300 rounded-2xl text-base focus:outline-none focus:border-[#B7104D] bg-white min-w-0">
+
+                            <button type="submit"
+                                class="bg-[#B7104D] text-white w-10 rounded-xl flex items-center justify-center hover:opacity-90 transition">
+
+                                <i class="bi bi-arrow-right text-2xl"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="mt-2 pb-4 border-t border-gray-200/50 text-center">
+
+                    <p class="text-sm text-gray-400">
+                        &copy; 2026 Pawly Sanctuary. Made with love and treats.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <script src="./Assets/js/script.js"></script>
+        <!--Flowbite-->
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+        <!--Animate aos-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

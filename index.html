@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--  Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Animate Aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS Stylesheet-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Title-->
+    <title>Pawly</title>
+
+</head>
+
+<body>
+    <div class="overall ">
+
+        <!----------------------------NAv BAr---------------------------------->
+
+        <nav class="bg-[#FAF3ED]/80 w-full border-b sticky top-0 z-50 ">
+            <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between min-h-[80px]">
+
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="Assets/images/logo.png" alt="Pawly Logo" class="h-16">
+                </a>
+
+                <div class="flex items-center space-x-2 lg:order-2">
+                    <div class="hidden md:block w-48 lg:w-64 mx-4">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" placeholder="Search..."
+                                class="w-full pl-9 pr-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm focus:ring-2 focus:ring-[#B7104D]">
+                        </div>
+                    </div>
+
+                    <button data-collapse-toggle="mobile-menu" type="button"
+                        class="inline-flex items-center p-2 text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+
+                    <a href="cart.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-cart3 text-xl"></i></a>
+                    <button class="p-2 text-[#B7104D] hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-heart-fill text-xl"></i></button>
+                    <a href="signin.html" class="p-2 hover:bg-[#F8AFC2] rounded-full transition"><i
+                            class="bi bi-person text-xl"></i></a>
+
+
+                </div>
+
+                <div class="hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
+                    <ul
+                        class="flex flex-col mt-4 lg:flex-row lg:space-x-6 lg:mt-0 font-medium text-gray-800 pb-4 lg:pb-0">
+                        <li><a href="index.html"
+                                class="block py-2 text-[#B7104D] underline-offset-4px decoration-[#B7104D] border-b-2 border-[#B7104D] lg:border-b-0">Home</a>
+                        </li>
+                        <li><a href="dog.html" class="block py-2 hover:text-[#B7104D] transition">Dog</a></li>
+                        <li><a href="cat.html" class="block py-2 hover:text-[#B7104D] transition">Cat</a></li>
+                        <li><a href="smallpets.html" class="block py-2 hover:text-[#B7104D] transition">Small Pets</a>
+                        </li>
+                        <li><a href="breed.html" class="block py-2 hover:text-[#B7104D] transition">Shop by Breed</a>
+                        </li>
+                        <li><a href="vet.html" class="block py-2 hover:text-[#B7104D] transition">Consult Vet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <!--------------------------Banner Section------------------------------------>
+
+        <section class="bg-[#FAF3ED] min-h-[600px] flex items-center py-2 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <div class="text-center lg:text-left">
+                    <span
+                        class="bg-[#F8D7DA] pb-10 text-[#B7104D] text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-wider">
+                        Premium Care Sanctuary
+                    </span>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-6 mb-6 leading-tight">
+                        Everything Your <br> Pet Needs
+                    </h1>
+
+                    <p class="text-gray-600 text-lg max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
+                        Treat your companions to a world of curated wellness, gourmet nutrition, and specialized care
+                        designed for their unique happiness.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-10 ml-20 mt-20">
+                        <a href="dog.html"
+                            class="animate-zoom inline-block bg-[#E55F5F] text-white px-10 py-4 rounded-full font-bold shadow-lg text-center hover:scale-110 transition-transform">
+                            Shop Now
+                        </a>
+                        <a href="breed.html"
+                            class="animate-zoom bg-[#006D5B] text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-[#005a4b] transition text-center">
+                            Explore Categories
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="./Assets/images/premin home'.png" alt="Golden Retriever and Bunny"
+                        class="w-full h-auto rounded-[3rem] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+
+                    <div
+                        class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-[2rem] shadow-xl flex items-center gap-4 border border-white">
+                        <div
+                            class="bg-[#006D5B] w-12 h-12 rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase text-gray-500 font-bold tracking-widest">Trusted By</p>
+                            <p class="text-lg font-extrabold text-gray-900">50k+ Pet Parents</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-------------------Why US--------------------------->
+
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-[#2DD4BF] font-bold uppercase tracking-widest text-xs">The Pawly Promise</span>
+                    <h2 class="text-4xl font-extrabold text-gray-900 mt-4">Why Pet Parents Love Us</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div
+                        class="bg-[#FFFDF0] p-8 rounded-[2.5rem] border border-yellow-100 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="animate-zoom bg-[#FDE047] w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                            <i class="bi bi-briefcase-fill text-gray-800 text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Vet-Vetted Products</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">Every snack and toy is hand-picked and approved
+                            by our expert veterinary panel.</p>
+                    </div>
+
+                    <div
+                        class="bg-[#F0FDFA] p-8 rounded-[2.5rem] border border-teal-100 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="animate-zoom bg-[#2DD4BF] w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                            <i class="bi bi-speedometer2 text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Fast Paw-Delivery</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">Swift shipping to your doorstep, because we
+                            know someone is waiting for their treats.</p>
+                    </div>
+
+                    <div
+                        class="bg-[#FFFDF0] p-8 rounded-[2.5rem] border border-yellow-100 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="animate-zoom bg-[#FDE047] w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                            <i class="bi bi-headset text-gray-800 text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">24/7 Expert Support</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">Real humans (and animal lovers) available day
+                            and night for all your pet queries.</p>
+                    </div>
+
+                    <div
+                        class="bg-[#F0FDFA] p-8 rounded-[2.5rem] border border-teal-100 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <div
+                            class="animate-zoom bg-[#2DD4BF] w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-inner">
+                            <i class="bi bi-hand-thumbs-up-fill text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3">Happy Tail Guarantee</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">Not happy? No wagging tail? We'll make it right
+                            with our 30-day easy return policy.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!----------------------Category-------------------->
+
+        <section class="py-16 bg-[#FAF3ED]">
+            <div class="max-w-7xl mx-auto ">
+
+                <div class="flex justify-between mb-10">
+                    <div>
+                        <h2 class="text-4xl font-extrabold text-gray-900">Shop by Category</h2>
+                        <p class="text-gray-600 mt-2">Tailored experiences for every member of the family.</p>
+                    </div>
+                    <a href="breed.html" class="text-[#B7104D] font-bold flex items-center gap-2 hover:underline mr-5">
+                        View All <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                    <div
+                        class="lg:col-span-2 bg-white rounded-2xl overflow-hidden relative flex flex-col md:flex-row items-center shadow-sm">
+                        <div class="p-10 md:p-12 z-10 w-full md:w-1/2">
+                            <span class="text-[#B7104D] text-5xl font-black opacity-90 block mb-4">01</span>
+                            <h3 class="text-3xl font-extrabold text-gray-900 mb-4">Everything for Dogs</h3>
+                            <p class="text-gray-500 mb-6">From heavy-duty chew toys to grain-free gourmet feasts.</p>
+
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center gap-2 text-teal-600 font-medium text-sm">
+                                    <i class="bi bi-check-circle"></i> Durable Gear
+                                </li>
+                                <li class="flex items-center gap-2 text-teal-600 font-medium text-sm">
+                                    <i class="bi bi-check-circle"></i> Puppy Nutrition
+                                </li>
+                            </ul>
+
+                            <a href="#"
+                                class="animate-zoom inline-block bg-[#B7104D] text-white px-8 py-3 rounded-full font-bold shadow-lg hover:opacity-90 transition-all">
+                                Shop Canine
+                            </a>
+                        </div>
+                        <div class="w-full md:w-1/2 h-full flex justify-end items-end">
+                            <img src="./Assets/images/category left.png" alt="Dog" class="object-contain max-h-[400px]">
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[#79FFE1] rounded-[3rem] overflow-hidden p-10 flex flex-col items-start shadow-sm text-gray-900">
+                        <h3 class="text-3xl font-extrabold mb-2">Feline Essentials</h3>
+                        <p class="opacity-80 mb-8">Pamper your cat with luxury.</p>
+
+                        <div class="w-full mt-auto flex justify-center">
+                            <img src="./Assets/images/cate right.png" alt="Cat"
+                                class="rounded-2xl w-full object-cover shadow-lg aspect-square">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------------------Bunny SEction------------------------>
+        <section class="py-5 bg-[#FAF3ED] px-6">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="bg-[#FDE047] grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-10 md:p-20 rounded-2xl shadow-lg overflow-hidden relative">
+
+
+
+                    <div
+                        class="space-y-6 text-gray-900 z-10 text-center md:text-left flex flex-col items-center md:items-start">
+
+
+                        <h2 class="text-4xl md:text-5xl font-black leading-tight">
+                            Small Pet Kingdom
+                        </h2>
+
+                        <p class="text-gray-700 text-lg max-w-lg opacity-90 leading-relaxed">
+                            Specialized habitats and treats for Rabbits, Hamsters and Birds.</p>
+
+                        <div class="pt-4">
+                            <a href="#"
+                                class="animate-zoom inline-block bg-[brown] text-white px-10 py-4 rounded-full font-bold shadow-md hover:bg-[#d44d4d] transition-all">
+                                Discover Small Pets
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative flex justify-center md:justify-end">
+                        <div class="absolute inset-0 bg-[#FACC15] rounded-2xl rotate-[-6deg] scale-105"></div>
+
+                        <div
+                            class="relative bg-white p-4 rounded-2xl shadow-2xl  group overflow-hidden max-w-sm md:max-w-md">
+                            <img src="./Assets/images/bunny.png" alt="smallpets bunny"
+                                class="w-full h-auto object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!---------------------------Expert Team----------------------------->
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Meet Our Experts</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                        Our certified veterinary doctors are here to provide the highest standard of specialized care
+                        for your beloved companions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+
+
+                    <div class="group">
+
+                        <div class="bg-[#FAF3ED] p-8 rounded-2xl text-center shadow-sm">
+                            <img src="./Assets/images/doc1.png" alt="doc1"
+                                class="mt-1 w-full h-full object-cover transition-transform duration-500 ">
+                            <h3 class="text-xl font-semibold text-gray-900">Dr. Sarah Jenkins</h3>
+                            <p class="text-[#B7104D] font-semibold text-xs mb-6 uppercase tracking-wider">Senior
+                                Nutrition Specialist</p>
+                            <a href="#"
+                                class="animate-zoom block w-full border-2 border-[#B7104D] text-[#B7104D] py-3 rounded-full font-bold hover:bg-[#B7104D] hover:text-white transition-all">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="group">
+
+                        <div class="bg-[#FAF3ED] p-8 rounded-2xl text-center shadow-sm">
+                            <img src="./Assets/images/doc2.png" alt="doc2"
+                                class="w-full h-full object-cover transition-transform duration-500 ">
+                            <h3 class="text-xl font-semibold text-gray-900">Dr. Michael Chen</h3>
+                            <p class="text-[#B7104D] font-semibold text-sm mb-6 uppercase tracking-wider">Behavioral
+                                Expert</p>
+                            <a href="#"
+                                class="animate-zoom block w-full border-2 border-[#B7104D] text-[#B7104D] py-3 rounded-full font-bold hover:bg-[#B7104D] hover:text-white transition-all">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="group">
+
+                        <div class="bg-[#FAF3ED] p-8 rounded-2xl text-center shadow-sm">
+                            <img src="./Assets/images/doc3.png" alt="doc3"
+                                class="w-full h-full object-cover transition-transform duration-500 ">
+
+                            <h3 class="text-xl font-semibold text-gray-900">Dr. Elena Rodriguez</h3>
+                            <p class="text-[#B7104D] font-semibold text-sm mb-6 uppercase tracking-wider">Senior Care
+                                Specialist</p>
+                            <a href="#"
+                                class="animate-zoom block w-full border-2 border-[#B7104D] text-[#B7104D] py-3 rounded-full font-bold hover:bg-[#B7104D] hover:text-white transition-all">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="group">
+
+                        <div class="bg-[#FAF3ED] p-8 rounded-2xl text-center shadow-sm">
+                            <img src="./Assets/images/doc4.png" alt="Doc4"
+                                class="w-full h-full object-cover object-contain transition-transform duration-500 ">
+                            <h3 class="text-xl font-semibold text-gray-900">Dr. James Wilson</h3>
+                            <p class="text-[#B7104D] font-semibold text-sm mb-6 uppercase tracking-wider">Emergency Care
+                            </p>
+                            <a href="#"
+                                class="animate-zoom block w-full border-2 border-[#B7104D] text-[#B7104D] py-3 rounded-full font-bold hover:bg-[#B7104D] hover:text-white transition-all">
+                                Book Consultation
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------------------------Marquee------------------------------->
+
+
+
+        <section class="py-1 bg-[#FAF3ED] overflow-hidden ">
+
+
+            <h2 class="text-3xl md:text-4xl font-black py-3">
+                Meet the Breeds
+            </h2>
+
+            <p class="text-gray-700 text-lg py-1 max-w-lg opacity-90 leading-relaxed">
+                Finding the perfect match for your lifestyle.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="w-[300px] bg-white p-5 rounded-2xl shadow-sm flex-shrink-0">
+                    <img src="./Assets/images/marquee1.png" class="w-full aspect-square object-cover rounded-2xl mb-1"
+                        alt="Product">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Golden Retriever</h3>
+                    <div class="flex gap-2 mb-3">
+                        <span
+                            class="border border-teal-500 text-teal-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Friendly</span>
+                        <span
+                            class="border border-teal-500 text-teal-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Active</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-tight">The Quintessesntial family dog, known for their
+                        gentle temperament and intelligence.</p>
+                </div>
+
+                <div class="w-[300px] bg-white p-5 rounded-2xl shadow-sm flex-shrink-0">
+                    <img src="./Assets/images/marquee2.png" class="w-full aspect-square object-cover rounded-2xl mb-4"
+                        alt="Product">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Persian Cat</h3>
+                    <div class="flex gap-2 mb-3">
+                        <span
+                            class="border border-pink-500 text-pink-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Calm</span>
+                        <span
+                            class="border border-pink-500 text-pink-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">LUXURY</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-tight">Famous for their long, beautiful coats and quiet,
+                        affectionate personalities.</p>
+                </div>
+
+                <div class="w-[300px] bg-white p-5 rounded-2xl shadow-sm flex-shrink-0">
+                    <img src="./Assets/images/marquee3.png" class="w-full aspect-square object-cover rounded-2xl mb-4"
+                        alt="Product">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">French Bulldog</h3>
+                    <div class="flex gap-2 mb-3">
+                        <span
+                            class="border border-blue-500 text-blue-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Playful</span>
+                        <span
+                            class="border border-blue-500 text-blue-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Adaptable</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-tight">A small-scale companion with a large-scale
+                        personality , perfect for city living.</p>
+                </div>
+
+                <div class="w-[300px] bg-white p-5 rounded-2xl shadow-sm flex-shrink-0">
+                    <img src="./Assets/images/marquee4.png" class="w-full aspect-square object-cover rounded-2xl mb-4"
+                        alt="Product">
+                    <h3 class="font-bold text-lg text-gray-900 mb-2">Maine Coon</h3>
+                    <div class="flex gap-2 mb-3">
+                        <span
+                            class="border border-purple-500 text-purple-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Giant</span>
+                        <span
+                            class="border border-purple-500 text-purple-600 text-[10px] font-bold px-2 py-1 rounded-md uppercase">Loyal</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-tight">The 'Genetle Giant' of the cat which is known for
+                        their size and bushy hair.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--------------------Curated Section-------------------->
+
+        <section class="max-w-7xl mx-auto px-6 py-16 bg-[#FAF3ED]">
+            <h2 class="text-4xl font-bold text-center mb-12">Curated For Excellence</h2>
+
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+            
+        </section>
+
+
+        <!-----------------------------------FAQ-------------------------------->
+
+        <section class="max-w-4xl mx-auto py-20 px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Curious Minds Want to Know</h2>
+            <p class="text-gray-500 text-center mb-12">Your common questions answered with a wag.</p>
+
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="faq-item bg-[#FAF3ED] rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)"
+                        class="w-full flex items-center justify-between p-2 text-left focus:outline-none">
+                        <span class="text-xl font-semibold text-gray-900">How do I choose the right food for my
+                            puppy?</span>
+                        <i class="bi bi-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="p-8 pt-0 text-gray-600 leading-relaxed">
+                            Look for high-quality protein sources and essential nutrients like DHA. We recommend
+                            consulting with Dr. Sarah Jenkins for a personalized nutrition plan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="faq-item bg-[#FAF3ED] rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)"
+                        class="w-full flex items-center justify-between p-2 text-left focus:outline-none">
+                        <span class="text-xl font-semibold text-gray-900">What is your return policy for toys?</span>
+                        <i class="bi bi-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="p-8\ pt-0 text-gray-600 leading-relaxed">
+                            We offer a 30-day "no-chew-left-behind" policy. If your pet isn't satisfied, we'll exchange
+                            it for something more their style.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Question 3 -->
+                <div class="faq-item bg-[#FAF3ED] rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)"
+                        class="w-full flex items-center justify-between p-2 text-left focus:outline-none">
+                        <span class="text-xl font-semibold text-gray-900">Are your supplements safe for seniors?</span>
+                        <i class="bi bi-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="p-8\ pt-0 text-gray-600 leading-relaxed">
+                            Yes, our senior formula is specifically designed to support joint health and cognitive
+                            function in older pets. However, we always recommend checking with your vet before starting
+                            any new supplement regimen.
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- Question 4 -->
+                <div class="faq-item bg-[#FAF3ED] rounded-2xl overflow-hidden">
+                    <button onclick="toggleFAQ(this)"
+                        class="w-full flex items-center justify-between p-2 text-left focus:outline-none">
+                        <span class="text-xl font-semibold text-gray-900">Do you offer International Shipping?</span>
+                        <i class="bi bi-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <p class="p-8\ pt-0 text-gray-600 leading-relaxed">
+                        Currently, we ship to the United States, Canada, and the UK. We are working hard to expand our paws across the globe, so stay tuned for updates!    
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+<!---------------------------Book Call----------------------------------->
+
+<section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="bg-[#5EEAD4] rounded-[3rem] overflow-hidden flex flex-col md:flex-row items-stretch min-h-[450px]">
+        
+        <div class="flex-1 p-12 md:p-20 flex flex-col justify-center items-start">
+            <span class="bg-[#0D6B61] text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest mb-6">
+                Expert Advice
+            </span>
+            
+            <h2 class="text-4xl md:text-6xl font-bold text-[#0D6B61] leading-tight mb-6">
+                Unsure about something? Talk to a Vet.
+            </h2>
+            
+            <p class="text-[#0D6B61] text-lg opacity-80 max-w-md mb-10 leading-relaxed">
+                Get instant video consultations with certified veterinarians from the comfort of your home.
+            </p>
+            
+            <button class="bg-[#0D6B61] hover:bg-[#0a564e] text-white px-8 py-4 rounded-3xl flex items-center gap-3 transition-all shadow-lg hover:shadow-xl">
+                <i class="bi bi-calendar-plus text-xl"></i>
+                <span class="font-bold">Book a Call</span>
+            </button>
+        </div>
+
+        <div class="flex-1 relative min-h-[300px]">
+            <img src="./Assets/images/call banner.png" alt="call banner" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#5EEAD4] to-transparent"></div>
+        </div>
+
+    </div>
+</section>
+
+<!--------------------Stay in Touch--------------------------->
+
+<section class="w-full bg-[#FAF3ED] py-20 px-6 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        
+        <div class="flex-1 space-y-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Let's Stay in Touch</h2>
+
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#B13636] rounded-full flex items-center justify-center shrink-0">
+                    <i class="bi bi-geo-alt-fill text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900">Main Sanctuary</h3>
+                    <p class="text-gray-600">123 Pet Wellness Ave, Suite 400<br>San Francisco, CA 94103</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#0D6B61] rounded-full flex items-center justify-center shrink-0">
+                    <i class="bi bi-telephone-fill text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900">Call Us</h3>
+                    <p class="text-gray-600">General: (555) PAW-LY01<br>Vet Hotline: (555) VET-CARE</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-[#7D7D1E] rounded-full flex items-center justify-center shrink-0">
+                    <i class="bi bi-envelope-fill text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900">Email</h3>
+                    <p class="text-gray-600">hello@pawly.care<br>support@pawly.care</p>
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <h4 class="font-bold text-gray-900 mb-4">Follow the Fun</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
+                        <i class="bi bi-globe"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
+                        <i class="bi bi-people-fill"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full relative">
+            <div class="bg-[#A09494] rounded-[3rem] aspect-square md:aspect-auto md:h-[600px] overflow-hidden shadow-2xl border-[8px] border-white relative">
+                <img src="./Assets/images/map.png" alt="Map Location" class="w-full h-full object-cover opacity-60">
+                
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 flex items-center translate-x-4">
+                     <div class="bg-[#B13636] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="bi bi-paw-fill"></i>
+                     </div>
+                     <div class="bg-white px-4 py-2 rounded-full shadow-md -ml-2 text-sm font-bold">
+                        Pawly Sanctuary
+                     </div>
+                </div>
+            </div>
+            
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-[#99E6D9] rounded-full -z-10 opacity-50"></div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------------------Footer------------------------------->
+
+        <footer class="bg-[#FAF3ED] w-full pt-4 pb-2 text-gray-700 rounded-t-3xl mt-16 border-t border-gray-200/30">
+
+            <div class="max-w-7xl mx-auto px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+
+                    <!-- Column 1 -->
+                    <div>
+
+                        <a href="index.html" class="inline-block mb-6">
+                            <h2 class="font-extrabold text-[#B7104D] text-4xl tracking-tight">Pawly</h2>
+                        </a>
+
+                        <p class="text-lg leading-relaxed text-gray-500 mb-2 max-w-xs">
+                            Curating the world's finest supplies for your non-human family
+                            members. We believe in quality, longevity, and extra belly rubs.
+                        </p>
+
+                        <img src="./Assets/images/footer images.png" alt="Happy Pets" class="h-12 object-contain">
+
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="lg:pl-10">
+
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Pet Care </h4>
+
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li>Puppy Care</li>
+                            <li>Senior Wellness</li>
+                            <li>Adopt Don't Shop</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="lg:pl-6">
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm">Sustainability</h4>
+                        <ul class="space-y-6 text-lg font-medium">
+                            <li> Eco Packaging </li>
+                            <li>Ethical Sourcing </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div>
+                        <h4 class="text-gray-900 font-bold mb-8 uppercase tracking-widest text-sm"> Newsletter</h4>
+
+                        <p class="text-lg text-gray-600 mb-2"> Great treats and tips in your inbox </p>
+
+                        <form class="flex gap-1">
+                            <input type="email" placeholder="Enter e-mail address..." required
+                                class="flex-1 px-1 py-4 border border-gray-300 rounded-2xl text-base focus:outline-none focus:border-[#B7104D] bg-white min-w-0">
+
+                            <button type="submit"
+                                class="bg-[#B7104D] text-white w-10 rounded-xl flex items-center justify-center hover:opacity-90 transition">
+
+                                <i class="bi bi-arrow-right text-2xl"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="mt-2 pb-4 border-t border-gray-200/50 text-center">
+
+                    <p class="text-sm text-gray-400">
+                        &copy; 2026 Pawly Sanctuary. Made with love and treats.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <script src="./Assets/js/script.js"></script>
+        <!--Flowbite-->
+        <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+        <!--Animate aos-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
