@@ -24,53 +24,50 @@ function addToCart(name, price, image) {
     alert(`${name} added to cart!`);
 }
 
-
+//Filter
 document.addEventListener('DOMContentLoaded', () => {
     const priceSlider = document.querySelector('input[type="range"]');
-    const priceDisplay = priceSlider.parentElement.querySelector('.justify-between span:last-child');
+    // More robust way to find the price display span
+    const priceDisplay = document.querySelector('.justify-between span:last-child');
     const brandCheckboxes = document.querySelectorAll('input[type="checkbox"]');
     const productCards = document.querySelectorAll('.product-card');
-
-    // 1. Update price display label dynamically
-    priceSlider.addEventListener('input', (e) => {
-        priceDisplay.textContent = `$${e.target.value}+`;
-        filterProducts();
-    });
-
-    // 2. Listen for Brand changes
-    brandCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', filterProducts);
-    });
 
     function filterProducts() {
         const maxPrice = parseFloat(priceSlider.value);
         
-        // Get array of checked brands
+        // 1. Update the price text dynamically
+        if (priceDisplay) {
+            priceDisplay.textContent = `$${maxPrice}`;
+        }
+
+        // 2. Get array of checked brands (cleaned of extra whitespace)
         const activeBrands = Array.from(brandCheckboxes)
             .filter(i => i.checked)
-            .map(i => i.parentElement.innerText.trim());
+            .map(i => i.nextElementSibling.textContent.trim());
 
+        // 3. Loop through cards
         productCards.forEach(card => {
             const price = parseFloat(card.getAttribute('data-price'));
             const brand = card.getAttribute('data-brand');
             
-            // Logic: 
-            // - If no brands are checked, show all brands.
-            // - Otherwise, check if product brand is in activeBrands.
-            // - Check if price is <= slider value (or however you prefer the logic).
-            
+            // Logic: Show if (No brands selected OR brand matches) AND (Price is <= slider)
             const matchesBrand = activeBrands.length === 0 || activeBrands.includes(brand);
             const matchesPrice = price <= maxPrice;
 
             if (matchesBrand && matchesPrice) {
-                card.style.display = 'block';
+                card.style.setProperty('display', 'block', 'important');
             } else {
-                card.style.display = 'none';
+                card.style.setProperty('display', 'none', 'important');
             }
         });
     }
 
-    // Initialize display
+    // Event Listeners
+    priceSlider.addEventListener('input', filterProducts);
+    brandCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterProducts);
+    });
+
+    // Run once on load to set initial state
     filterProducts();
 });
-
